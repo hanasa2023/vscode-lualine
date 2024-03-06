@@ -1,6 +1,7 @@
 # vscode-lualine
 #### A lualine theme based on vscode statusline.Hope you like it!🎉
 
+[![GitHub](https://img.shields.io/github/license/hanasa2023/neovim-dotfile?style=for-the-badge)](https://github.com/hanasa2023/vscode-lualine?tab=MIT-1-ov-file)
 
 ## 📸 ScreenShot
 ![vscode-lualine](https://files.catbox.moe/wbht81.png)
