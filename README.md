@@ -9,11 +9,12 @@
 ## ⚡️ Requirements
 - neovim 0.7+
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- Nerd Font
 
 ## 📦 Usage
 
 If you are using NvChad you can put the file in `$NVIM_CONFIG/lua/custom/configs/lualine/vscode.lua` and add the following to your `$NVIM_CONFIG/lua/custom/plugins.lua` file.
-```lua
+```lua { 5-7 }
   {
     "nvim-lualine/lualine.nvim",
     -- You can optionally lazy-load heirline on UIEnter
@@ -23,6 +24,61 @@ If you are using NvChad you can put the file in `$NVIM_CONFIG/lua/custom/configs
     end,
   },
 ```
+<details>
+    <summary>File structure</summary>
+    
+``` { 35, 23 }
+.
+├── init.lua
+├── lazy-lock.json
+├── LICENSE
+├── lua
+│   ├── core
+│   │   ├── bootstrap.lua
+│   │   ├── default_config.lua
+│   │   ├── init.lua
+│   │   ├── mappings.lua
+│   │   └── utils.lua
+│   ├── custom
+│   │   ├── chadrc.lua
+│   │   ├── configs
+│   │   │   ├── conform.lua
+│   │   │   ├── dropbar.lua
+│   │   │   ├── hlchunk.lua
+│   │   │   ├── lazygit.lua
+│   │   │   ├── lspconfig.lua
+│   │   │   ├── lualine
+│   │   │   │   ├── default.lua
+│   │   │   │   ├── evil_lualine.lua
+│   │   │   │   └── vscode.lua
+│   │   │   ├── nvim-notify.lua
+│   │   │   ├── nvim-scrollbar.lua
+│   │   │   ├── nvim-ts-autotag.lua
+│   │   │   ├── overrides.lua
+│   │   │   ├── todo-comments.lua
+│   │   │   ├── trouble.lua
+│   │   │   └── wilder.lua
+│   │   ├── highlights.lua
+│   │   ├── init.lua
+│   │   ├── mappings.lua
+│   │   ├── nohup.out
+│   │   ├── plugins.lua
+│   │   └── README.md
+│   └── plugins
+│       ├── configs
+│       │   ├── cmp.lua
+│       │   ├── lazy_nvim.lua
+│       │   ├── lspconfig.lua
+│       │   ├── mason.lua
+│       │   ├── nvimtree.lua
+│       │   ├── others.lua
+│       │   ├── telescope.lua
+│       │   └── treesitter.lua
+│       └── init.lua
+├── README.md
+└── README.ZH_CN.md
+```
+</details>
 
 ### Linux / MacOs(Unix)
 ```git clone https://github.com/hanasa2023/vscode-lualine ~/.config/nvim/lua/custom/configs/lualine```
