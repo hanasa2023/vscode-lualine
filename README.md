@@ -4,7 +4,9 @@
 [![GitHub](https://img.shields.io/github/license/hanasa2023/neovim-dotfile?style=for-the-badge)](https://github.com/hanasa2023/vscode-lualine?tab=MIT-1-ov-file)
 
 ## 📸 ScreenShot
-![vscode-lualine](https://files.catbox.moe/wbht81.png)
+![vscode-lualine](https://files.catbox.moe/zay5sy.png)
+![vscode-lualine](https://files.catbox.moe/wn7qjs.png)
+- The light colorscheme is not beatuiful.~~You can change the color in the `vscode_light.lua`~~
 
 ## ⚡️ Requirements
 - neovim 0.7+
@@ -20,14 +22,14 @@ If you are using NvChad you can put the file in `$NVIM_CONFIG/lua/custom/configs
     -- You can optionally lazy-load heirline on UIEnter
     event = "UIEnter",
     config = function()
-      require "custom.configs.lualine.vscode"
+      require "custom.configs.lualine.vscode_dark"
     end,
   },
 ```
 <details>
     <summary>File structure</summary>
     
-``` { 35, 23 }
+``` { 35, 23, 24}
 .
 ├── init.lua
 ├── lazy-lock.json
@@ -50,7 +52,8 @@ If you are using NvChad you can put the file in `$NVIM_CONFIG/lua/custom/configs
 │   │   │   ├── lualine
 │   │   │   │   ├── default.lua
 │   │   │   │   ├── evil_lualine.lua
-│   │   │   │   └── vscode.lua
+│   │   │   │   ├── vscode_light.lua
+│   │   │   │   └── vscode_dark.lua
 │   │   │   ├── nvim-notify.lua
 │   │   │   ├── nvim-scrollbar.lua
 │   │   │   ├── nvim-ts-autotag.lua
@@ -96,3 +99,6 @@ If you are using NvChad you can put the file in `$NVIM_CONFIG/lua/custom/configs
 
 - For pwsh : $ENV:LOCALAPPDATA\nvim-lualine
 ```C:\Users\ENV:USERNAME\AppData\Local\nvim\lua\custom\configs\lualine```
+
+## 🎨 TODO:
+- [ ] Improve the light colorscheme
