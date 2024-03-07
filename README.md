@@ -15,7 +15,7 @@
 
 ## 📦 Usage
 
-If you are using NvChad you can put the file in `$NVIM_CONFIG/lua/custom/configs/lualine/vscode.lua` and add the following to your `$NVIM_CONFIG/lua/custom/plugins.lua` file.
+If you are using NvChad you can put the file in `$NVIM_CONFIG/lua/custom/configs/lualine/vscode_dark.lua` and add the following to your `$NVIM_CONFIG/lua/custom/plugins.lua` file.
 ```lua { 5-7 }
   {
     "nvim-lualine/lualine.nvim",
@@ -88,10 +88,10 @@ If you are using NvChad you can put the file in `$NVIM_CONFIG/lua/custom/configs
 
 ### Windows
 - If you're using Command Prompt(CMD)
-```git clone https://github.com/hanasa2023/vscode-lualine %USERPROFILE%\AppData\Local\nvim\nvim\lua\custom\configs\lualine```
+```git clone https://github.com/hanasa2023/vscode-lualine %USERPROFILE%\AppData\Local\nvim\lua\custom\configs\lualine```
 
 - If you're using PowerShell(pwsh)
-```git clone https://github.com/hanasa2023/vscode-lualine $ENV:USERPROFILE\AppData\Local\nvim\nvim\lua\custom\configs\lualine```
+```git clone https://github.com/hanasa2023/vscode-lualine $ENV:USERPROFILE\AppData\Local\nvim\lua\custom\configs\lualine```
 
 **If the above path doesnt work, try any of these paths:**
 - For CMD : %LOCALAPPDATA%\nvim-lualine
