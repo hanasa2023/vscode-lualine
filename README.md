@@ -6,6 +6,7 @@
 ## 📸 ScreenShot
 ![vscode-lualine](https://files.catbox.moe/zay5sy.png)
 ![vscode-lualine](https://files.catbox.moe/wn7qjs.png)
+![vscode-lualine](https://files.catbox.moe/z2xayj.png)
 - The light colorscheme is not beatuiful.~~You can change the color in the `vscode_light.lua`~~
 
 ## ⚡️ Requirements
