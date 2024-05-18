@@ -199,7 +199,24 @@ local config = {
         function()
           return "{} %Y"
         end,
-        color = { fg = colors.blue, gui = "bold" },
+        color = { fg = colors.blue, bg = colors.mbg, gui = "bold" },
+        -- color = { fg = colors.blue, gui = "bold" },
+      },
+      {
+        function ()
+          local msg = ""
+          -- local buf_ft = vim.api.nvim_buf_get_option(0, "filetype")
+          local clients = vim.lsp.get_active_clients()
+          if next(clients) == nil then
+            return msg
+          end
+          for _, client in ipairs(clients) do
+            if client.name == "copilot" then
+              return ""
+            end
+          end
+          return msg
+        end
       },
       {
         function()
@@ -217,7 +234,8 @@ local config = {
           return msg
         end,
         icon = "󰄭 ",
-        color = { fg = colors.lsp },
+        color = { fg = colors.lsp, bg = colors.mbg },
+        -- color = { fg = colors.lsp },
       },
     },
     lualine_y = {},
